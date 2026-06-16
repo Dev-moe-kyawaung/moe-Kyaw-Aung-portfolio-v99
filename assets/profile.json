@@ -6,5 +6,6 @@
   "languages": "Burmese 🇲🇲, English 🌐, Kotlin ☕",
   "profileImage": "assets/profile.png",
   "focusAreas": ["Mobile", "Backend", "Security", "AI/ML"],
-  "currentlyBuilding": "MoekyawTranslator — AI Translation App"
+  "currentlyBuilding": "MoekyawTranslator — AI Translation App",
+  "threeDartModel": "assets/3d/kyaw_aung.glb"  // add your 3D model here
 }
