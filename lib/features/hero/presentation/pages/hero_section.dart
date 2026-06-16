@@ -1,27 +1,63 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/widgets/cyber_frame.dart';
+import 'package:three_dart/three_dart.dart' as three;
+import 'package:three_dart/three_dart.dart' hide Material;
+import 'package:three_dart/three_dart_helpers/three_dart_helpers.dart' hide Material;
 
-class HeroSection extends StatelessWidget {
+class HeroSection extends StatefulWidget {
   const HeroSection({super.key});
+  @override
+  State<HeroSection> createState() => _HeroSectionState();
+}
+
+class _HeroSectionState extends State<HeroSection> with TickerProviderStateMixin {
+  late three.ThreeDart td;
+  late three.Mesh _cube;
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(vsync: this, duration: const Duration(seconds: 10))..repeat();
+    _controller.addListener(_rotate);
+  }
+
+  void _rotate() {
+    if (_cube != null) {
+      _cube.rotation.y += 0.01;
+      _cube.rotation.x += 0.005;
+      td.render();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    return CyberFrame(
-      child: SizedBox(
-        height: MediaQuery.of(context).size.height * 0.85,
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('★ SENIOR ANDROID DEVELOPER ★', style: const TextStyle(fontSize: 20, color: Color(0xFF00D9A5))),
-              const SizedBox(height: 16),
-              Text('MOE KYAW AUNG', style: const TextStyle(fontSize: 56, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 12),
-              Text('V99 • 12 Years Experience', style: const TextStyle(fontSize: 24)),
-            ],
-          ),
-        ),
+    return SizedBox(
+      height: MediaQuery.of(context).size.height * 0.85,
+      child: three.WebGLRendererWidget(
+        onInit: (renderer, camera, scene) {
+          td = three.ThreeDart()..scene.add(scene)..camera = camera..renderer = renderer;
+          camera.position.setValues(0, 0, 10);
+          camera.lookAt(three.Vector3.zero());
+
+          // Add 3D cube model (your Kyaw Aung model)
+          _cube = three.Mesh(
+            geometry: three.BoxGeometry(width: 2, height: 2, depth: 2),
+            material: three.MeshPhongMaterial(color: 0x00D9A5),
+          )..position.setValues(0, 0, 0);
+          scene.add(_cube);
+
+          // Lights
+          scene.add(three.AmbientLight(color: 0xffffff));
+          scene.add(three.PointLight(color: 0xffffff, position: three.Vector3(5, 5, 5)));
+        },
+        onBuild: (_) {},
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 }
