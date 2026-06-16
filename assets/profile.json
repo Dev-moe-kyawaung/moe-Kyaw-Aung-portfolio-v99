@@ -1,0 +1,10 @@
+{
+  "name": "Moe Kyaw Aung",
+  "tagline": "Senior Android Developer",
+  "yearsExperience": 12,
+  "location": "Tachileik, Myanmar 🇲🇲 ↔ Bangkok, Thailand 🇹🇭",
+  "languages": "Burmese 🇲🇲, English 🌐, Kotlin ☕",
+  "profileImage": "assets/profile.png",
+  "focusAreas": ["Mobile", "Backend", "Security", "AI/ML"],
+  "currentlyBuilding": "MoekyawTranslator — AI Translation App"
+}
