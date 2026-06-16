@@ -1,0 +1,29 @@
+name: moe_kyaw_aung_portfolio_v99
+description: Moe Kyaw Aung - Senior Android Developer Portfolio V99
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.4
+  url_launcher: ^6.3.0
+  intl: ^0.19.0
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/profile.png
+    - assets/projects/
+    - assets/services/
