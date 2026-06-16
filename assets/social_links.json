@@ -3,5 +3,14 @@
   {"name": "LinkedIn", "url": "https://www.linkedin.com/in/moe-kyaw-aung-2653093a1", "icon": "linkedin"},
   {"name": "YouTube", "url": "https://www.youtube.com/channel/UCuTXUguZb4xjeL2nX8WJGew", "icon": "youtube"},
   {"name": "Bluesky", "url": "https://bsky.app/profile/moekyawaung96.bsky.social", "icon": "twitter"},
-  {"name": "Telegram", "url": "https://t.me/moekyawaung", "icon": "telegram"}
+  {"name": "Telegram", "url": "https://t.me/moekyawaung", "icon": "telegram"},
+  {"name": "Tumblr", "url": "https://www.tumblr.com/moekyawaung", "icon": "tumblr"},
+  {"name": "Flickr", "url": "https://www.flickr.com/people/204037451@N06", "icon": "flickr"},
+  {"name": "Vimeo", "url": "https://vimeo.com/user252414232", "icon": "vimeo"},
+  {"name": "Reddit", "url": "https://reddit.com/user/moekyawaung", "icon": "reddit"},
+  {"name": "Pinterest", "url": "https://pinterest.com/moekyawaung", "icon": "pinterest"},
+  {"name": "Twitter/X", "url": "https://x.com/moekyawaung", "icon": "twitter"},
+  {"name": "Slack", "url": "https://moekyawaung.slack.com/", "icon": "slack"},
+  {"name": "PayPal", "url": "https://paypal.me/my/profile", "icon": "paypal"},
+  {"name": "WordPress", "url": "https://moekyawaung.github.io", "icon": "wordpress"}
 ]
