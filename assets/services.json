@@ -1,0 +1,5 @@
+[
+  {"id": 1, "title": "Code Review", "price": "$299", "description": "Architecture analysis & performance audit"},
+  {"id": 2, "title": "Full Project Development", "price": "$2,499", "description": "End-to-end development with CI/CD"},
+  {"id": 3, "title": "Consulting", "price": "$149/hr", "description": "Architecture guidance & mentoring"}
+]
