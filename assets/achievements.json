@@ -1,0 +1,8 @@
+[
+  {"id": 1, "title": "500K+ Downloads", "value": "500K", "unit": "downloads"},
+  {"id": 2, "title": "12 Years Experience", "value": "12", "unit": "years"},
+  {"id": 3, "title": "99% Crash-Free Rate", "value": "99", "unit": "%"},
+  {"id": 4, "title": "122 GitHub Repos", "value": "122", "unit": "repos"},
+  {"id": 5, "title": "82+ Certificates", "value": "82", "unit": "certs"},
+  {"id": 6, "title": "3K+ Apps", "value": "3K+", "unit": "apps"}
+]
