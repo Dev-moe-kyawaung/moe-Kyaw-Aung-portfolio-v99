@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Social Dashboard",
+    "image": "assets/projects/social_dashboard.jpg",
+    "github": "https://github.com/moekyawaung-tech/social-dashboard",
+    "tech": "Flutter • Firebase • Compose",
+    "description": "Modern analytics dashboard with real-time data and beautiful charts."
+  },
+  {
+    "id": 2,
+    "title": "Advanced Video Player",
+    "image": "assets/projects/video_player.jpg",
+    "github": "https://github.com/moekyawaung-tech/video-player",
+    "tech": "ExoPlayer • Kotlin",
+    "description": "Feature-rich video player with custom controls and offline support."
+  },
+  {
+    "id": 3,
+    "title": "POS Ultimate Pro Max",
+    "image": "assets/projects/pos_pro_max.jpg",
+    "github": "https://github.com/moekyawaung-tech/POS-Ultimate-Pro-Max",
+    "tech": "Hilt • Coroutines",
+    "description": "Full-featured point of sale system with inventory and payments."
+  }
+]
